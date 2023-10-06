@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Socket Client</title>
+</head>
+<body>
+    <h1 class="tituloh">Socket Client</h1>
+    <hr>
+    <p>
+        Server: Status
+        <span id="lblOnline" class="state-c">Online</span>
+        <span id="lblOffline" class="state-d">Offline</span>
+    </p>
+
+    <div class="row">
+        <div class="col">
+            <input type="text" id="text-mensaje" class="input-fom">
+        </div>
+        <div class="col">
+            <button id="btn-enviar" class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
+  
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/socket-client.js"></script>
+</body>
+</html>
